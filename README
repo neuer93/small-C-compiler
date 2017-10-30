@@ -1,0 +1,21 @@
+scan.l  parser.y :  generate the grammar tree
+
+predefine.h : include all header, and define some function in helper.c
+
+helper.c:  some function to debug && handle string
+
+main.c :  function main in it
+
+tree.h tree.c: define the struct of the grammer tree, including some functions to control it
+
+symboltable.h symboltable.c: define the symbol table and the function to handle them
+
+typecheck.h typecheck.c: include some functions used to typecheck
+
+block.h block.c: create block for each stmtblock. When the block is built, the symboltable will be created.
+
+codegen.h codegen.c: include the function to generate code
+
+makefile: make      get "scc" file
+
+README: I'm README :)
